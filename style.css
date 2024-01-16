@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+body{
+    /* background-color:rgb(14, 23, 46); */
+    position: relative;
+    background: url(./image/Untitled\ design\ \(4\).png);
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 800;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+.logo img{
+    width: 20%;
+    height: auto;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40;
+  
+}
+.navlist a:hover{
+color: rgb(168, 35, 35);
+}
+section{
+    padding: 120px 19px 100px;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url(./image/Untitled\ design\ \(3\).png);
+    background-size: cover;
+    background-position: center;
+    display:grid;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+}
+.hero-text h3{
+    color:rgb(177, 177, 254);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+    
+}
+.hero-text h1{
+    font-family: 'Dosis' ,sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.hero-text h4{
+    color: rgb(248, 220, 220);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background:rgb(33, 32, 32) ;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid rgb(73, 42, 165);
+    transition: all ease .50s;
+
+}
+.btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid brown;
+}
+.about{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 4rem;
+    
+
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.about-text h5{
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+span{
+    color: rgb(11, 156, 213);
+}
+.about-text p{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+.service{
+    background:transparent ;
+}
+.text-center h2{
+    color: rgb(19, 79, 190);
+    font-size: 40px;
+    font-weight: 800;
+}
+.text-center{
+    text-align: center;
+}
+.text-center h4{
+    font-size: 20px;
+    font-weight: 20;
+}
+.service-item{
+    width: 33.3;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,auto)); */
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+   
+}
+.service-box{
+    padding: 45px 30px;
+    background: brown;
+    border-radius: 0.8rem;
+    border:1px solid transparent;
+    cursor: pointer;
+    transition: all ease .50s;
+}
+.service-box .service-icon {
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 10px;
+}
+.service h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 12px;
+   
+}
+.service p{
+    color: rgb(184, 108, 108);
+    font-size:80px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+.s-btnn{
+    display: inline-block;
+    padding: 9px 24px;
+    background: rgb(69, 65, 65);
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid rgb(69, 25, 180);
+    border-radius: 2rem;
+}
+.s-btnn:hover{
+    transform: scale(1.1);
+    background: transparent;
+    border: 2px solid transparent;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 5rem;
+}
+.left-contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+
+}
+.in i{
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    font-size: 120px;
+    margin-bottom: 15px;
+    transition: all ease .40s;
+}
+.in i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.in h4{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(0, 200, 255);
+}
+.right-contact  h2{
+    font-family: 'Dosis' ,sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.right-contact a{
+    display: inline-block;
+    color: rgb(7, 39, 181);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgb(15, 131, 232);
+    padding: 3px 0;
+    transition: all ease .40s;
+    border-radius: 20px;
+}
+.right-contact a:hover{
+    transform: translateY(-5px);
+    color: black;
+    border-bottom: 2px solid black;
+}
+.right-contact p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 30px;
+}
+.end-section{
+    padding: 80px 19px 70px;
+    background: rgb(97, 91, 132);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.end-section h3{
+    font-size: 28px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+.end-section p{
+    color: rgb(43, 43, 39);
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+.end-section i{
+    height: 40px;
+    width: 40px;
+    background: rgb(83, 69, 69);
+    color: rgb(211, 198, 198);
+    border: 2px solid rgb(58, 42, 165);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 9px;
+    transition: all ease .50s;
+    opacity: 2;
+
+}
+.end-section i:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    border: 2px solid brown;
+}
+.scroll-bttn{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    color: rgb(255, 255, 255);
+    background: rgb(37, 52, 165);
+    font-size: 23px;
+    padding: 9px;
+    border-radius: 0.8rem;
+
+}
